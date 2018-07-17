@@ -6,7 +6,18 @@
 --  LICENSE file in the root directory of this source tree. An additional grant
 --  of patent rights can be found in the PATENTS file in the same directory.
 --
-debugger = require('fb.debugger')
+-- th main.lua -data [path to ImageNet dataset] -nGPU 1 -batchSize 128 
+-- -netType alexnet -binaryWeight -dropout 0.1
+--
+-- th main.lua -data [path to ImageNet dataset] -nGPU 4 -batchSize 800 
+-- -netType alexnetxnor -binaryWeight -optimType adam -epochSize 1500
+-- 
+-- To use the trained models use the option -retrain [path to the trained model file] 
+-- and -testOnly
+-- 
+-- find . -name "*.JPEG" | xargs -I {} convert {} -resize "256^>" {}
+--
+-- debugger = require('fb.debugger')
 require 'torch'
 require 'cutorch'
 require 'paths'
