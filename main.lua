@@ -37,6 +37,9 @@ nClasses = opt.nClasses
 paths.dofile('util.lua')
 paths.dofile('model.lua')
 
+print('model ready...')
+os.exit()
+
 opt.imageSize = model.imageSize or opt.imageSize
 opt.imageCrop = model.imageCrop or opt.imageCrop
 
