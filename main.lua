@@ -54,11 +54,15 @@ os.execute('mkdir -p ' .. opt.save)
 paths.dofile('data.lua')
 
 print('data processing ready...')
-os.exit()
+-- os.exit()
 
 paths.dofile('train.lua')
+
+print('training preparation ends...')
+
 paths.dofile('test.lua')
 
+print('test preparation ends...')
 
 epoch = opt.epochNumber
 if opt.testOnly then
