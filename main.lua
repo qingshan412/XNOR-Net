@@ -35,13 +35,13 @@ local opts = paths.dofile('opts.lua')
 
 opt = opts.parse(arg)
 
-print('parser ready...')
-os.exit()
-
 nClasses = opt.nClasses
 
 paths.dofile('util.lua')
 paths.dofile('model.lua')
+
+print('parser ready...')
+os.exit()
 
 opt.imageSize = model.imageSize or opt.imageSize
 opt.imageCrop = model.imageCrop or opt.imageCrop
