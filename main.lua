@@ -40,9 +40,6 @@ nClasses = opt.nClasses
 paths.dofile('util.lua')
 paths.dofile('model.lua')
 
-print('parser ready...')
-os.exit()
-
 opt.imageSize = model.imageSize or opt.imageSize
 opt.imageCrop = model.imageCrop or opt.imageCrop
 
@@ -55,6 +52,10 @@ print('Saving everything to: ' .. opt.save)
 os.execute('mkdir -p ' .. opt.save)
 
 paths.dofile('data.lua')
+
+print('data processing ready...')
+os.exit()
+
 paths.dofile('train.lua')
 paths.dofile('test.lua')
 
