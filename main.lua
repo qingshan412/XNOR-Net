@@ -1,4 +1,4 @@
---  th main.lua -data ../../../data/ImageNet -nGPU 1 
+--  th main.lua -data ../../../data/ImageNet/xnor256 -nGPU 1 
 -- -batchSize 128 -netType alexnet -binaryWeight -dropout 0.1
 -- 
 --  Modified by Mohammad Rastegari (Allen Institute for Artificial Intelligence (AI2)) 
