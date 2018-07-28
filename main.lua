@@ -1,3 +1,6 @@
+--  th main.lua -data ../../../data/ImageNet -nGPU 1 
+-- -batchSize 128 -netType alexnet -binaryWeight -dropout 0.1
+-- 
 --  Modified by Mohammad Rastegari (Allen Institute for Artificial Intelligence (AI2)) 
 --  Copyright (c) 2014, Facebook, Inc.
 --  All rights reserved.

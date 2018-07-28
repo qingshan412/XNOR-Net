@@ -8,10 +8,10 @@ function createModel()
           return C
    end
    local function MaxPooling(kW, kH, dW, dH, padW, padH)
-    return nn.SpatialMaxPooling(kW, kH, dW, dH, padW, padH)
+          return nn.SpatialMaxPooling(kW, kH, dW, dH, padW, padH)
    end
 
-local features = nn.Sequential()
+   local features = nn.Sequential()
    features:add(ContConvolution(3,96,11,11,4,4,2,2))       -- 224 -> 55
    features:add(MaxPooling(3,3,2,2))                   -- 55 ->  27
    features:add(ContConvolution(96,256,5,5,1,1,2,2))       --  27 -> 27  
